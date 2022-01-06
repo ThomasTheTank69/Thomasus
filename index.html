@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thomasus</title>
     <style>
-        body {
-            font-family: sans-serif;
-            text-align: center;
-            background-color: blueviolet;
-                }
-img{
-    width: 200px;
-    height: 200px;
-    box-shadow: 2px 2px 10px 5px rgba(255,13,142,0.1);
+        img{
+            width: 480px;
+            height: 270px;
+            box-shadow: 2px 5px 15px 5px blueviolet;
+            transition: .4s ease;
+        }
+        img:hover{
+            box-shadow: 2px 5px 15px 5px palevioletred;  
+        } 
+      i {
+        font-size: 80px;
+        margin-top: 200px;
+        padding: 60px;
+        transition: .4s ease;
+      }
+      i:hover{
+          transform: scale(1.1);
+      }
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        background-color: #121212;
+      }
+      .rainbow {
+        text-decoration: underline;
+      }
+      .rainbow_text_animated {
+        background: linear-gradient(to right, #5614c7, #bc11fa, #3e0ffa);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 6s ease-in-out infinite;
+        background-size: 400% 100%;
+      }
 
-}
+      @keyframes rainbow_animation {
+        0%,
+        100% {
+          background-position: 0 0;
+        }
 
+        50% {
+          background-position: 100% 0;
+        }
+      }
+      h1 {
+        font-size: 100px;
+      }
     </style>
     <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-    crossorigin="anonymous"
-  />
-</head>
-<body>
-<h1>Thomasusl</h1>
-<img src="https://www.kobieta.pl/media/cache/default_view/uploads/media/default/0004/05/kotek.jpeg" alt="kotek" />
-<a href="https://dc.zielinus.gq/"><i class="fab fa-discord"></i></a>
-</body>
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/v5.15/icons/github?style=brands"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fontawesome.com/v5.15/icons/youtube?style=brands"
+    />
+  </head>
+  <body>
+    <h1 class="rainbow rainbow_text_animated">Thomasus</h1>
+    <a href="https://www.youtube.com/watch?v=pP25d2yf61U"><img src="miniaturka.png" alt="miniaturka montage"></a>
+  <div>
+    <a href="https://www.youtube.com/channel/UCBboZvhP10QXPnaNBCaMGZQ"
+    ><i class="fab fa-youtube"></i
+  ></a>
+  <a href="https://github.com/ThomasTheTank69"
+    ><i class="fab fa-github"></i
+  ></a>
+  <a href="https://dc.zielinus.gq/"><i class="fab fa-discord"></i></a>
+  </div>
 </html>
